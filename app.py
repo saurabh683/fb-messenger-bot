@@ -8,6 +8,7 @@ from flask import Flask, request
 app = Flask(__name__)
 
 os.environ["VERIFY_TOKEN"]="gotan123"
+os.environ["PAGE_ACCESS_TOKEN"]="EAAWrbjkmzZCABAL2A6av9CXsB2tZBfGJ1tpd9EBI246ZBJ5MjtqOHEqMmgbpFflLlZB2adDWIpui61AZCcuh7RUPxjZCT6V1yAZAsgM5r8cgqp1YUpYEWY6xR1eZBZCbhka7dPmHA6zcJBf6TBtaJjSKBiOFvblre1jFjVcMVM6WyQIxyfaljwm4T"
 @app.route('/', methods=['GET'])
 def verify():
     # when the endpoint is registered as a webhook, it must echo back
